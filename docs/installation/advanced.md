@@ -46,6 +46,16 @@ Then run `supervisorctl reload` to load the new job, you can see whether it's ru
 with `supervisor status`.
 
 
+## Permissions
+
+The media directory in the client needs to be writable by the web server:
+
+```bash
+chgrp www-data /opt/miniapps.example.com/client/media/
+chmod g+w /opt/miniapps.example.com/client/media/
+```
+
+
 ## Front-End (Apache)
 
 This step is what makes the app accessible from outside the server machine.

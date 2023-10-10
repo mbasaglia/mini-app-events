@@ -1,17 +1,24 @@
 Event Telegram Mini-App Demo
 ============================
 
-Mini Apps is a Python framework to create [Telegram Mini Apps](https://core.telegram.org/bots/webapps).
+This app shows an interface that allows users to mark events they plan to attend.
 
-There are some built-in apps that showcase the features of both this framework and the mini apps feature on Telegram:
+User will receive a notification when the event is starting.
 
-_Tic Tac Toe_ allows you to play tic tac toe (also known as naughts and crosses) against another player on Telegram.
+Live instance: [@GlaxMiniEventBot](https://t.me/GlaxMiniEventBot).
 
-_Mini Events_ is a demo app that shows a list of events the user can attend.
-
-_Glaximini_ is a more complex app that allows the user to create animated stickers and share them on Telegram.
+More info in the [Mini Event app page](./docs/apps/mini_event.md).
 
 Full documentation is available on [Read the Docs](https://mini-apps.readthedocs.io/en/latest/).
+
+## Limitations
+
+The events app is a technical demo, for a fully functional app some changes are needed.
+
+For one, the events are only specified as a time (not a date), this allows the bot
+to always show some data regardless of the current date.
+
+The bot will send notifications based on the server time, which might be different from the time shown to the users.
 
 
 Set Up
